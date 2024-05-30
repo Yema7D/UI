@@ -165,13 +165,13 @@ export default function Home() {
     <div className="font-sans min-h-screen p-5 bg-gray-100">
       <div className="page-container relative min-h-screen">
         <header className="flex items-center justify-center py-4 shadow-md mb-6 bg-gray-100 text-center">
-          <img src="static/assets/logo.png" alt="Company Logo" className="mr-4 w-16 h-16" />
+          <img src="logo.png" alt="Company Logo" className="mr-4 w-16 h-16" />
           <h2 className="text-xl font-semibold">Yema7D - Chat With Your PDF Documents</h2>
         </header>
 
         <div className="flex flex-row justify-center items-start space-x-5 h-full">
           <div className="bg-gray-50 flex flex-col p-6 bg-white shadow-lg rounded-lg w-3/4 space-y-6 transition-transform duration-300 hover:translate-y-1 hover:shadow-xl">
-            <div id="response" className="border p-4 rounded-md overflow-y-auto h-96 space-y-3">
+            <div id="response" className="border p-4 rounded-md overflow-y-auto h-80 space-y-3">
               {messages.map((message, index) => (
                 <div key={index} className={`flex ${message.type === "user" ? "justify-end" : "justify-start"} gap-2.5`}>
                   <div className={`flex flex-col w-full max-w-[480px] p-4 ${message.type === "user" ? "bg-blue-100 border border-blue-200 dark:bg-blue-700" : "bg-gray-100 border border-gray-200 dark:bg-gray-700"} rounded-xl`}>
